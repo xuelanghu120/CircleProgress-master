@@ -15,13 +15,9 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 
-import static android.R.attr.radius;
-import static android.R.attr.textSize;
-
 
 /**
- * @Description 圆形的进度条
- * Created by YOLANDA on 2015-12-10.
+ *  圆形的进度条
  */
 public class CircleProgress extends View {
     protected float maxProgress; //最大进度
@@ -134,9 +130,7 @@ public class CircleProgress extends View {
         initScall();
     }
 
-    /**
-     * 初始化刻度尺的信息
-     */
+//初始化刻度尺的信息
     private void initScall() {
         initTextPaint();
         if(maxProgress==360){
@@ -164,7 +158,9 @@ public class CircleProgress extends View {
     }
 
     /**
-     * @param paint
+     *
+     * @param paint 画笔
+     * @param isSolid 是否空心
      * @param isRound 边角是否是圆的
      */
     protected void setCommonPaint(Paint paint, boolean isSolid, boolean isRound) {
@@ -229,14 +225,9 @@ public class CircleProgress extends View {
     }
 
 
-    // ============================================================
-    // = Z- 对外开放的方法
-    // ============================================================
-
     /**
      * 设置进度
-     *
-     * @param progress >=0 && <=100
+     * @param progress 0到100
      */
     public void setProgress(int progress) {
         if (progress < 0 || progress > 100) {

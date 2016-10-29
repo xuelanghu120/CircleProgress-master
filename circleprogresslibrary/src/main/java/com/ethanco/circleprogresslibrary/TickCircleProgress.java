@@ -12,8 +12,7 @@ import android.util.AttributeSet;
 import com.ethanco.circleprogresslibrary.utils.GeometryUtil;
 
 /**
- * @Description 带刻度条的圆形进度条
- * Created by YOLANDA on 2015-12-10.
+ *  带刻度条的圆形进度条
  */
 public class TickCircleProgress extends CircleProgress {
     protected Paint tickPaint;

@@ -11,8 +11,7 @@ import android.widget.TextView;
 import com.ethanco.circleprogresslibrary.utils.DisplayUtil;
 
 /**
- * @Description 具有文本显示的CircleProgress
- * Created by YOLANDA on 2015-12-11.
+ * 具有文本显示的CircleProgress
  */
 public class TextCircleProgress extends RelativeLayout {
     private final int headColor;
@@ -62,14 +61,9 @@ public class TextCircleProgress extends RelativeLayout {
         tvBottomHead.setTextSize(bottomHeadSize);
     }
 
-    // ============================================================
-    // = Z- 对外开放的方法
-    // ============================================================
-
     /**
      * 设置主进度条进度
-     *
-     * @param progress
+     * @param progress 进度
      */
     public void setMainProgress(int progress) {
         circleProgress.setProgress(progress);
@@ -77,8 +71,7 @@ public class TextCircleProgress extends RelativeLayout {
 
     /**
      * 设置子进度条进度
-     *
-     * @param progress
+     * @param progress 进度
      */
     public void setSubProgress(int progress) {
         tickCircleProgress.setProgress(progress);
@@ -86,8 +79,7 @@ public class TextCircleProgress extends RelativeLayout {
 
     /**
      * 设置主标题
-     *
-     * @param text
+     * @param text 文本
      */
     public void setHead(String text) {
         tvHead.setText(text);
@@ -95,8 +87,7 @@ public class TextCircleProgress extends RelativeLayout {
 
     /**
      * 设置副标题
-     *
-     * @param text
+     * @param text 文本
      */
     public void setSubHead(String text) {
         tvSubHead.setText(text);
@@ -104,8 +95,7 @@ public class TextCircleProgress extends RelativeLayout {
 
     /**
      * 设置底部标题
-     *
-     * @param text
+     * @param text 文本
      */
     public void setBottomHead(String text) {
         tvBottomHead.setText(text);
