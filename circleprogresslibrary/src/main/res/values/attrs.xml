@@ -23,6 +23,11 @@
         <attr name="isCircleCorner" format="boolean" />
         <!-- 是否是实心的-->
         <attr name="isSolid" format="boolean" />
+        <!--刻度尺文本开始的角度-->
+        <attr name="mScallStarteAngle" format="integer" />
+        <!--刻度文本个数-->
+        <attr name="mScallValueCount" format="integer" />
+
     </declare-styleable>
 
     <declare-styleable name="TickCircleProgress">

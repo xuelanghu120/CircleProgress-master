@@ -57,9 +57,9 @@ public class CircleProgress extends View {
     //刻度值文本宽度
     private float mScallValueTxtWidth;
     //刻度文本个数
-    private int mScallValueCount = 8;
+    private int mScallValueCount;
     //刻度尺文本开始的角度
-    private int mScallStarteAngle = -45;
+    private int mScallStarteAngle;
     //刻度尺文本如果是360度需要+1
     private int mScallValueCountFull= 1;
 
@@ -91,6 +91,10 @@ public class CircleProgress extends View {
         useGradient = ta.getBoolean(R.styleable.CircleProgress_useGradient, true);
         isCircleCorner = ta.getBoolean(R.styleable.CircleProgress_isCircleCorner, true);
         isSolid = ta.getBoolean(R.styleable.CircleProgress_isSolid, false);
+
+
+        mScallValueCount = ta.getInteger(R.styleable.CircleProgress_mScallValueCount,8);
+        mScallStarteAngle = ta.getInteger(R.styleable.CircleProgress_mScallStarteAngle, -45);
         ta.recycle();
 
         //检查值是否合理
@@ -134,7 +138,7 @@ public class CircleProgress extends View {
     private void initScall() {
         initTextPaint();
         if(maxProgress==360){
-            mScallValueCountFull =0;
+            mScallValueCountFull = 0;
         }
     }
 
